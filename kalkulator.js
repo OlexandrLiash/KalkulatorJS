@@ -5,14 +5,14 @@
 
 // var x = Number(prompt("Введіть перше число"));
 //    if (isNaN(x)) {
-//       alert ('is not number'); break;
+//       alert ('is not number');
 //    }
 //    else {
 //       alert ('OK')
 //    }
 // var y = Number(prompt("Введіть друге число"));
 //    if (isNaN(y)) {
-//       alert ('is not number'); break;
+//       alert ('is not number');
 //    }
 //    else {
 //       alert ('OK')
@@ -25,7 +25,7 @@
 //       case "-":   alert("="+(x-y)); break;
 //       case "*":   alert("="+(x*y)); break;
 //       case "/":   alert("="+(x/y)); break;
-//       default:    alert("Це не оператор!"); break;
+//       default:    alert("Це не оператор!"); 
 //    }
 // }
 
@@ -71,7 +71,6 @@ function checkOperator(operator) {
          }
 }
 
-
 while (start) {
    start = checkX(x);
    x = prompt('Введіть перше число', '');
@@ -91,21 +90,31 @@ while (start) {
    }
  }
 
-// const calc = (x, y, oper) => {
-//    switch (oper) {
-//       case '+': return x + y;
-//       case '-': return x - y;
-//       case '/': return x / y;
-//       case '*': return x * y;
-//       default: console.log('неправельный оператор');
-//    }
-//    switch (y) {
-//       case 0: console.log ('на 0 делить нельзя!!');
-//       case '': console.log ('путое поле y');
-//    }
+ typeof x
+ 
+// Не розумію як зробити перевірку на число у 
+
+// const calc = (x, oper, y) => {
+
 //    switch (x) {
-//       case '': console.log ('путое поле x');
+//       case '': console.log ('пустое поле x'); break;
+//       case Number: console.log('правильно!')
+//    }
+
+//    switch (oper) {
+//       case '+': return x + y; break;
+//       case '-': return x - y; break;
+//       case '/': return x / y; break;
+//       case '*': return x * y; break;
+//       case '': return console.log('Вы не ввели оператор'); break;
+//       default: console.log('Неправельный оператор'); break;
+//    }
+
+//    switch (y) {
+//       case 0: console.log ('На 0 делить нельзя!!'); break;
+//       case '': console.log ('пустое поле y'); break;
 //    }
 // }
 
-// console.log(calc('asd',2,'-'))
+// console.log(calc(1,'/',2))
+
